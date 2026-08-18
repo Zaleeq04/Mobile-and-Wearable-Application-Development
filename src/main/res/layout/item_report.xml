@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Card layout used for each report displayed in RecyclerView -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="6dp">
+
+    <!-- Main container for report information -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp"
+        android:background="@color/cardWhite">
+
+        <!-- Displays uploaded report image -->
+        <ImageView
+            android:id="@+id/reportImage"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Displays item name -->
+        <TextView
+            android:id="@+id/itemNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iPhone 13"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textDark"/>
+
+        <!-- Displays short item description -->
+        <TextView
+            android:id="@+id/itemDescriptionText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black phone lost near canteen"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Displays item category -->
+        <TextView
+            android:id="@+id/itemCategoryText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category: Electronics"
+            android:layout_marginTop="6dp"
+            android:textSize="13sp"
+            android:textColor="#777777"/>
+
+        <!-- Displays reported location -->
+        <TextView
+            android:id="@+id/itemLocationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location: Curzon Building"
+            android:textSize="13sp"
+            android:textColor="#777777"/>
+
+        <!-- Displays current item status -->
+        <TextView
+            android:id="@+id/itemStatusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status: Lost"
+            android:textStyle="bold"
+            android:textColor="@color/dangerRed"
+            android:layout_marginTop="6dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

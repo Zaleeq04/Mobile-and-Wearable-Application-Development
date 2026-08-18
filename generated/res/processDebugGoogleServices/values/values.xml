@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">886375802286</string>
+    <string name="google_api_key" translatable="false">AIzaSyCpiVTICrqDQlWZfZ1Cv4GillGMdY6Pf6E</string>
+    <string name="google_app_id" translatable="false">1:886375802286:android:fb129e7a737b3d9599943f</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCpiVTICrqDQlWZfZ1Cv4GillGMdY6Pf6E</string>
+    <string name="google_storage_bucket" translatable="false">unifind-4d672.firebasestorage.app</string>
+    <string name="project_id" translatable="false">unifind-4d672</string>
+</resources>

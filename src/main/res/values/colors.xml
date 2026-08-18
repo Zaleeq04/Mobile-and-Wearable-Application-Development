@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Default system colours -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary brand colour used for buttons and navigation -->
+    <color name="primaryPurple">#6F4DBF</color>
+
+    <!-- Light background colour used across screens -->
+    <color name="lightPurple">#F3EEFF</color>
+
+    <!-- Card background colour for cleaner UI design -->
+    <color name="cardWhite">#FFFFFF</color>
+
+    <!-- Main text colour for readability -->
+    <color name="textDark">#222222</color>
+
+    <!-- Used for warning/error states such as lost items -->
+    <color name="dangerRed">#D32F2F</color>
+
+    <!-- Used for positive states such as verified/success messages -->
+    <color name="successGreen">#2E7D32</color>
+
+</resources>

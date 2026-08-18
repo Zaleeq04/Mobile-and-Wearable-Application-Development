@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ScrollView allows content to remain accessible on smaller screens -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Main vertical layout container for report details -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="@color/lightPurple">
+
+        <!-- Returns user to previous screen -->
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:backgroundTint="@color/primaryPurple"
+            android:textColor="@android:color/white"/>
+
+        <!-- Allows report owner to edit the selected report -->
+        <Button
+            android:id="@+id/editBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Report"
+            android:backgroundTint="@color/primaryPurple"
+            android:textColor="@android:color/white"/>
+
+        <!-- Allows report owner to mark item as resolved -->
+        <Button
+            android:id="@+id/resolvedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mark as Resolved"
+            android:backgroundTint="@color/primaryPurple"
+            android:textColor="@android:color/white"/>
+
+        <!-- Allows report owner to permanently delete report -->
+        <Button
+            android:id="@+id/deleteBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Report"
+            android:backgroundTint="@color/primaryPurple"
+            android:textColor="@android:color/white"/>
+
+        <!-- Displays uploaded report image -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop" />
+
+        <!-- Displays item name -->
+        <TextView
+            android:id="@+id/detailName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <!-- Displays item description -->
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginTop="12dp" />
+
+        <!-- Displays item category -->
+        <TextView
+            android:id="@+id/detailCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginTop="12dp" />
+
+        <!-- Displays reported location -->
+        <TextView
+            android:id="@+id/detailLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:layout_marginTop="12dp" />
+
+        <!-- Displays report status -->
+        <TextView
+            android:id="@+id/detailStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+</ScrollView>

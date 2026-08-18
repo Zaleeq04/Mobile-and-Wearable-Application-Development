@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Main layout container for profile screen -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8F9FC"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Profile icon -->
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/ic_profile"
+        app:tint="@color/primaryPurple"
+        android:contentDescription="Profile image"
+        android:layout_marginTop="40dp" />
+
+    <!-- Screen title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/textDark"
+        android:layout_marginTop="20dp" />
+
+    <!-- Subtitle description -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manage your account information"
+        android:textSize="14sp"
+        android:textColor="#777777"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Card container for user account details -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="10dp"
+        android:backgroundTint="@color/cardWhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Email label -->
+            <TextView
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="@color/textDark"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Displays logged-in user email -->
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user@email.com"
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- User ID label -->
+            <TextView
+                android:text="User ID"
+                android:textStyle="bold"
+                android:textColor="@color/textDark"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Displays Firebase user ID -->
+            <TextView
+                android:id="@+id/userId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UID"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Verification label -->
+            <TextView
+                android:text="Email Verified"
+                android:textStyle="bold"
+                android:textColor="@color/textDark"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Displays account verification status -->
+            <TextView
+                android:id="@+id/userVerified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="true"
+                android:textSize="15sp"
+                android:textColor="#666666"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Returns user to homepage -->
+    <Button
+        android:id="@+id/homeProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Home"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primaryPurple"
+        android:layout_marginTop="28dp"/>
+
+    <!-- Logs user out of application -->
+    <Button
+        android:id="@+id/logoutProfileBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primaryPurple"
+        android:layout_marginTop="18dp"/>
+
+</LinearLayout>

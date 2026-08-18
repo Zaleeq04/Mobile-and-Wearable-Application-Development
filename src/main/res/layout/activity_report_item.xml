@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Root layout container for report submission screen -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReportItemActivity">
+
+    <!-- Main vertical form layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Input field for item name -->
+        <EditText
+            android:id="@+id/itemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Item name" />
+
+        <!-- Input field for item description -->
+        <EditText
+            android:id="@+id/itemDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description" />
+
+        <!-- Input field for item category -->
+        <EditText
+            android:id="@+id/itemCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Category e.g. Phone, ID Card, Keys" />
+
+        <!-- Input field for reported location -->
+        <EditText
+            android:id="@+id/itemLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location e.g. Library, Canteen" />
+
+        <!-- Dropdown menu for selecting Lost or Found -->
+        <Spinner
+            android:id="@+id/itemStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Cancels report creation -->
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel" />
+
+        <!-- Displays selected item image -->
+        <ImageView
+            android:id="@+id/itemImageView"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:background="#EEEEEE"
+            android:contentDescription="Item image" />
+
+        <!-- Opens image picker to select photo -->
+        <Button
+            android:id="@+id/selectImageBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Item Image" />
+
+        <!-- Submits report to Firebase Firestore -->
+        <Button
+            android:id="@+id/submitItemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Report" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
